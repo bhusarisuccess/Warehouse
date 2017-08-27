@@ -39,6 +39,38 @@ public class Product {
     this.description = description;
   }
 
+  public static List<Product> getProducts() {
+    return products;
+  }
+
+  public static void setProducts(List<Product> products) {
+    Product.products = products;
+  }
+
+  public String getEan() {
+    return ean;
+  }
+
+  public void setEan(String ean) {
+    this.ean = ean;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
   public String toString() {
     return String.format("%s - %s", ean, name);
   }
